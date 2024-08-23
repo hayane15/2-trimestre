@@ -10,15 +10,18 @@
     
 <header class="cabeçalho">
     <div class="container">
-        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-         <img src="img/Logo.svg" alt="Logotipo da Biblioteca Start" class="container__imagem">
+        <span class="cabeçalho__menu-hamburguer container__imagem" role="button" aria-label="Abrir menu"></span>
+        <img src="img/Logo.svg" alt="Logotipo da Biblioteca Start" class="container__imagem">
     </div>
-    <div class="container">
-           <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
-         <a href="#"><img src="img/Emprestimos.svg" alt="Meus Empréstimos" class="container__imagem"></a>
-         <a href="#"><img src="img/Usuario.svg" alt="Meu Perfil" class="container__imagem"></a>
-    </div>
+    <nav>
+        <div class="container">
+            <a href="#" aria-label="Meus Favoritos"><img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+            <a href="#" aria-label="Meus Empréstimos"><img src="img/Emprestimos.svg" alt="Empréstimos" class="container__imagem"></a>
+            <a href="#" aria-label="Meu Perfil"><img src="img/Usuario.svg" alt="Perfil" class="container__imagem"></a>
+        </div>
+    </nav>
 </header>
+
 <ul class="lista-menu">
     <li class="lista-menu__titulo">Categorias</li>
     <li class="lista-menu__item">
@@ -37,6 +40,7 @@
         <a href="#" class="lista-menu__link">Vestibular</a>
     </li>
 </ul>
+
 <section class="banner">
     <h2 class="banner__titulo">Já sabe por onde começar?</h2>
     <p class="banner__text">
@@ -45,9 +49,6 @@
     <input type="search" class="banner__pesquisa" 
            placeholder="Qual será a sua próxima leitura?">
 </section>
+
 </body>
 </html>
-
-
-
-
