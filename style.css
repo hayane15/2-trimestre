@@ -1,6 +1,7 @@
 :root{
-    --cor-de-fundo: #ebecee;
+ --cor-de-fundo: #ebecee;
 }
+
 body{
     background-color: var(--cor-de-fundo);
 }
@@ -74,6 +75,37 @@ h1{
 .container{
     display: flex;
     align-items: center;
+}
+.lista-menu{
+    display: none;
+position: absolute;
+top: 100%;
+width: 60vw;
+}
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+:root{
+    --cor-de-fundo:  #EBECEE;
+    --branco:  #FFFFFF;
+    --amarelo:  #FECD2F;
+    --roxo-degrade: 
+linear-gradient(94.49deg,  #733887 35.48%,  #C75EEB 143.32%);
+}
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--amarelo);
+}
+.lista-menu__link{
+    background: var(--roxo-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
 
 
