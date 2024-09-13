@@ -10,7 +10,11 @@
     
 <header class="cabeçalho">
     <div class="container">
-        <span class="cabeçalho__menu-hamburguer container__imagem" role="button" aria-label="Abrir menu"></span>
+        <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+
         <img src="img/Logo.svg" alt="Logotipo da Biblioteca Start" class="container__imagem">
     </div>
     <nav>
@@ -22,7 +26,7 @@
     </nav>
 </header>
 
-<ul class="lista-menu">
+<ul class="lista-menu"></ul>
     <li class="lista-menu__titulo">Categorias</li>
     <li class="lista-menu__item">
         <a href="#" class="lista-menu__link">Sktista</a>
